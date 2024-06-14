@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realtor Startup Company</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="navl">
+            <img src="images/logo.png" alt="Company Logo" class="logo" />
+          </div>
+          <div> <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul></div>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1>Welcome to Empire Realtor & co</h1>
+        <p>Your trusted partner in real estate</p>
+        <a href="#contact" class="btn">Contact Us</a>
+      </div>
+      <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source
+            src="images/LUXURY INTERIOR DESIGN_ for spending the best life.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </header>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service">
+          <h3>Buying</h3>
+          <p>We help you find your dream home.</p>
+        </div>
+        <div class="service">
+          <h3>Selling</h3>
+          <p>Get the best value for your property.</p>
+        </div>
+        <div class="service">
+          <h3>Renting</h3>
+          <p>Find the perfect rental property.</p>
+        </div>
+        <div class="service long">
+          <h4>WHY WORK WITH US</h4>
+          <p>
+            With extensive years of experience, Empire Realtor & Co. has
+            strategically sold many landmark projects in PCMC. Committed to its
+            core values of Customer Satisfaction, Prosperity and Business Ethics
+            with a steadfast financial perspective and revolutionary vision
+            Empire Realtor & Co. fulfills its commitments, always on time. With
+            the “Deliver to Perfection” objective, the projects are effectively
+            studied and analyzed by qualified and trained personnel showing
+            commitment towards quality work and loyalty to our customers. Our
+            Team always stands head and shoulders above the rest, so that the
+            esteemed clientele gets value for their investment and accelerated
+            growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          We are a startup company dedicated to providing exceptional real
+          estate services. Our team of experienced agents is committed to
+          helping you navigate the complex real estate market with ease.
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img
+            src="images/gallery1.jpeg"
+            alt="Gallery Image 1"
+            class="gallery-item"
+          />
+          <img
+            src="images/gallery2.jpeg"
+            alt="Gallery Image 2"
+            class="gallery-item"
+          />
+          <img
+            src="images/gallery3.jpeg"
+            alt="Gallery Image 3"
+            class="gallery-item"
+          />
+          <img
+            src="images/gallery4.jpg"
+            alt="Gallery Image 4"
+            class="gallery-item"
+          />
+          <img
+            src="images/gallery5.webp"
+            alt="Gallery Image 5"
+            class="gallery-item"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="container">
+        <h2>Our Clients</h2>
+        <div class="clients-slider">
+          <div class="clients-slide-track">
+            <div class="client-logo">
+              <img src="images/client1.jpg" alt="Client 1" />
+            </div>
+            <div class="client-logo">
+              <img src="images/client2.jpg" alt="Client 2" />
+            </div>
+            <div class="client-logo">
+              <img src="images/client3.jpeg" alt="Client 3" />
+            </div>
+            <!-- Repeat logos to create a loop effect -->
+            <div class="client-logo">
+              <img src="images/client1.jpg" alt="Client 1" />
+            </div>
+            <div class="client-logo">
+              <img src="images/client2.jpg" alt="Client 2" />
+            </div>
+            <div class="client-logo">
+              <img src="images/client3.jpeg" alt="Client 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="address">
+        <h3>Our Address</h3>
+        <p>Zen Business center</p>
+        <p>Bhumkar Chowk, Wakad 57</p>
+        <p>Email: erealtor.in@gmail.com</p>
+        <p>Phone: 9209678183 / 9209671394</p>
+      </div>
+      <div class="container">
+        <p>&copy; 2024 Empire Realtor & co . All rights reserved.</p>
+      </div>
+    </footer>
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-image" />
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
